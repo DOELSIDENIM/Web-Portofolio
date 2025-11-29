@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Aziz - Portfolio</title>
+    <meta name="description" content="Portfolio Abdul Aziz - Fullstack Developer & UI/UX Enthusiast">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d97706',
+                        secondary: '#f97316',
+                        dark: '#0f1724',
+                        light: '#e6eef6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="dark">
+    
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-container">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Abdul Aziz</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="themeToggle" class="theme-toggle-btn">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-tag mb-3">
+                            <span class="badge-custom">👋 Welcome to my portfolio</span>
+                        </div>
+                        <h1 class="hero-title mb-3">
+                            Halo, Saya <br>
+                            <span class="gradient-text">Abdul Aziz</span>
+                        </h1>
+                        <div class="typing-container mb-4">
+                            <span class="typing-text"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+                        <p class="hero-description mb-4">
+                            Saya adalah mahasiswa Teknik Informatika semester 5 yang berfokus menjadi 
+                            fullstack developer dengan passion membangun aplikasi web dan mobile yang 
+                            fungsional serta menyenangkan untuk mendukung pengalaman belajar interaktif. 
+                            Menguasai teknologi frontend seperti Tailwind dan Bootstrap, serta backend 
+                            menggunakan Php Native dan database MySQL, saya berkomitmen menciptakan solusi
+                            digital yang efektif dan mudah digunakan. Dengan portofolio berisi berbagai 
+                            proyek pembelajaran interaktif, saya terus berkembang untuk menghadirkan 
+                            aplikasi yang tidak hanya memenuhi kebutuhan teknis tetapi juga memberikan 
+                            nilai tambah bagi pengguna.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn-primary-custom me-3">
+                                <span>Lihat Portfolio</span>
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#contact" class="btn-outline-custom">
+                                <span>Hubungi Saya</span>
+                            </a>
+                        </div>
+                        <div class="social-links mt-5">
+                            <a href="https://github.com/doelsidenim" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/abdul-aziz-024642288" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/abdul.aziz_18" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                    <div class="hero-image-container">
+                        <div class="hero-image-wrapper">
+                            <div class="hero-image-bg"></div>
+                            <img src="assets/img/foto-pp.jpg" alt="Abdul Aziz" class="hero-image">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-code"></i>
+                                <span>Frontend Dev</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-server"></i>
+                                <span>Backend Dev</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Tentang Saya</span>
+                <h1 class="section-title">Profil Lengkap</h1>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-card">
+                        <div class="about-card-header">
+                            <div class="about-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h3>Abdul Aziz</h3>
+                            <p class="text-muted">Fullstack Developer & UI/UX Enthusiast</p>
+                        </div>
+                        <div class="about-card-body">
+                            <p class="about-description">
+                                Saya fokus pada pengembangan aplikasi interaktif dan media edukatif digital. 
+                                Tertarik pada teknologi, desain, dan animasi. Berpengalaman membuat proyek 
+                                berbasis web dan mobile dengan tujuan menghadirkan pengalaman belajar yang menyenangkan.
+                            </p>
+                            
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Lokasi</strong>
+                                        <span>Surakarta, Jawa Tengah, Indonesia</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <a href="mailto:abdulaziz18123@gmail.com">abdulaziz18123@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>Telepon</strong>
+                                        <span>+62 895-3402-50433</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <div>
+                                        <strong>Pendidikan</strong>
+                                        <span>Pendidikan Teknik Informatika dan Komputer - Universitas Sebelas Maret</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="skills-main-card">
+                        <h3 class="mb-4">Keterampilan Utama</h3>
+                        <div class="skills-grid-main">
+                            <div class="skill-main-item">
+                                <div class="skill-main-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <h4>Frontend Development</h4>
+                                <p>HTML, CSS, JavaScript, Tailwind, Bootstrap, Flutter</p>
+                            </div>
+                            <div class="skill-main-item">
+                                <div class="skill-main-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <h4>Backend Development</h4>
+                                <p>PHP Native, Laravel</p>
+                            </div>
+                            <div class="skill-main-item">
+                                <div class="skill-main-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4>Database Management</h4>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill-main-item">
+                                <div class="skill-main-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h4>Design & Animation</h4>
+                                <p>Adobe Animate, Figma, Blender</p>
+                            </div>
+                            <div class="skill-main-item">
+                                <div class="skill-main-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h4>Development Tools</h4>
+                                <p>Git, GitHub, VS Code, Postman</p>
+                            </div>
+                            <div class="skill-main-item">
+                                <div class="skill-main-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h4>Deployment & Hosting</h4>
+                                <p>GitHub Pages, cPanel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Kemampuan</span>
+                <h1 class="section-title">Keterampilan & Keahlian</h1>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fab fa-html5 skill-icon"></i>
+                                <span class="skill-name">HTML & CSS / Tailwind / Bootstrap</span>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="92"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fab fa-js skill-icon"></i>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="88"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fas fa-mobile-alt skill-icon"></i>
+                                <span class="skill-name">Flutter</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fab fa-laravel skill-icon"></i>
+                                <span class="skill-name">Backend (Laravel)</span>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="82"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fas fa-database skill-icon"></i>
+                                <span class="skill-name">Database (MySQL)</span>
+                            </div>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="78"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fas fa-paint-brush skill-icon"></i>
+                                <span class="skill-name">UI/UX & Desain (Figma)</span>
+                            </div>
+                            <span class="skill-percentage">84%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="84"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fab fa-git-alt skill-icon"></i>
+                                <span class="skill-name">Git </span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-info">
+                                <i class="fas fa-film skill-icon"></i>
+                                <span class="skill-name">Adobe Animate / Animasi</span>
+                            </div>
+                            <span class="skill-percentage">86%</span>
+                        </div>
+                        <div class="progress-bar-custom">
+                            <div class="progress-fill" data-progress="76"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Karya Saya</span>
+                <h1 class="section-title">Portfolio Proyek</h1>
+                <div class="section-divider"></div>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters mb-5" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            
+            <div class="row g-4 portfolio-grid">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="game" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/portofolio/Game1.png" alt="Adventure of Knowledge">
+                            <div class="portfolio-overlay">
+                                <a href="https://doelsidenim.github.io/adventure-of-knowledge/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <button class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="badge-tag">Game Edukasi</span>
+                            </div>
+                            <h3>Adventure of Knowledge</h3>
+                            <p>Game edukasi berbasis Adobe Animate—kuis interaktif & animasi petualangan untuk anak-anak.</p>
+                            <div class="portfolio-meta">
+                                <span><i class="far fa-calendar"></i> Sep 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="150">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/portofolio/web1.png" alt="Web Portfolio">
+                            <div class="portfolio-overlay">
+                                <a href="https://rzenpancing.wuaze.com/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <button class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="badge-tag">Web Development</span>
+                            </div>
+                            <h3>Web Katalog E-Commerce</h3>
+                            <p>Platform katalog e-commerce sederhana yang berfokus pada penjualan peralatan memancing (khususnya Joran Tegek), dibangun dengan tampilan depan (frontend) yang menggunakan framework Tailwind CSS untuk memastikan desain yang responsive dan pengembangan antarmuka yang efisien. Sistem ini memanfaatkan basis data MySQL untuk mengelola data produk, inventaris, dan informasi admin secara terstruktur di sisi backend, memungkinkan pengambilan dan pembaruan data katalog secara dinamis.</p>
+                            <div class="portfolio-meta">
+                                <span><i class="far fa-calendar"></i> Okt 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/portofolio/flutter-quiz.jpg" alt="EduSpace">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/DOELSIDENIM/flutter-quiz" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <button class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="badge-tag">Mobile App</span>
+                            </div>
+                            <h3>EduSpace</h3>
+                            <p>Aplikasi Flutter berbasis kuis edukatif dengan tampilan interaktif dan sistem poin.</p>
+                            <div class="portfolio-meta">
+                                <span><i class="far fa-calendar"></i> Agu 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="250">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/portofolio/web2.png" alt="GreenEarth">
+                            <div class="portfolio-overlay">
+                                <a href="https://doelsidenim.github.io/UAS-DESAIN-WEB-ALBERT-DAN-AZIZ/" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <button class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="badge-tag">Web Edukasi</span>
+                            </div>
+                            <h3>Ozeum</h3>
+                            <p>Situs edukatif tema museum, berisi tentang barang-barang bersejarah.</p>
+                            <div class="portfolio-meta">
+                                <span><i class="far fa-calendar"></i> Jul 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/portofolio/UIUX.png" alt="ShopEase">
+                            <div class="portfolio-overlay">
+                                <a href="https://www.figma.com/design/GdqhshRoUFYsn7FgevxRkE/UAS-DESAIN-WEB?node-id=0-1&t=1YqFgiLUc6kOlfig-1" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <button class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="badge-tag">UI/UX Design</span>
+                            </div>
+                            <h3>Ozeum - UI Prototype</h3>
+                            <p>UI/UX prototype untuk contoh Web Museum, dibuat menggunakan Figma dengan fokus pada navigasi intuitif.</p>
+                            <div class="portfolio-meta">
+                                <span><i class="far fa-calendar"></i> Mei 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="game" data-aos="fade-up" data-aos-delay="350">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/portofolio/Game2.png" alt="Space Explorer">
+                            <div class="portfolio-overlay">
+                                <a href="https://doelsidenim.itch.io/space-explorer" target="_blank" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <button class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="badge-tag">Game Edukasi</span>
+                            </div>
+                            <h3>Space Explorer</h3>
+                            <p>Game edukasi tema luar angkasa berbasis Adobe Animate dengan misi dan kuis tiap level.</p>
+                            <div class="portfolio-meta">
+                                <span><i class="far fa-calendar"></i> Okt 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Testimoni</span>
+                <h1 class="section-title">Apa Kata Mereka</h1>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Kami sangat puas dengan website full-stack yang dikembangkan tim ini. Desain modern, fungsional, dan integrasi backend yang efisien. Proses pengembangan lancar dan hasilnya memenuhi semua kebutuhan bisnis kami. Sangat direkomendasikan!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/testimonials/1.jpg" alt="Dosen Pembimbing">
+                                <div class="author-info">
+                                    <h4>Rifqi Fauzan</h4>
+                                    <span>Klien</span>
+                                </div>
+                            </div>
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Karya-karyanya selalu menonjolkan kreativitas dan orisinalitas. Sangat menyenangkan bekerja 
+                                sama dengannya dalam berbagai proyek tim."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/testimonials/2.jpg" alt="Rekan Tim">
+                                <div class="author-info">
+                                    <h4>Albert Indra</h4>
+                                    <span>Rekan Tim</span>
+                                </div>
+                            </div>
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Cepat tanggap, komunikatif, dan solusi yang disajikan mudah diikuti. Hasil kerjanya selalu 
+                                memuaskan dan sesuai ekspektasi."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="assets/img/testimonials/3.jpg" alt="Klien">
+                                <div class="author-info">
+                                    <h4>Rayhan Rosyad</h4>
+                                    <span>Klien</span>
+                                </div>
+                            </div>
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Hubungi Saya</span>
+                <h1 class="section-title">Mari Bekerja Sama</h1>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <h3 class="mb-4">Informasi Kontak</h3>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:abdulaziz.dev@gmail.com">abdulaziz.dev@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telepon</h4>
+                                <a href="tel:+62895340250433">+62 895-3402-50433</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Lokasi</h4>
+                                <p>Bandung, Jawa Barat, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social mt-4">
+                            <h4 class="mb-3">Ikuti Saya</h4>
+                            <div class="social-links-contact">
+                                <a href="https://github.com/doelsidenim" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="www.linkedin.com/in/abdul-aziz-024642288" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://instagram.com/abdul.aziz_18" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-map mt-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.5354996679675!2d110.83173311058151!3d-7.5818510924010445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1642354566db%3A0x2bf3aaf719f40b3c!2sUlil%20Albab!5e1!3m2!1sid!2sid!4v1764404631807!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-card">
+                        <h3 class="mb-4">Kirim Pesan</h3>
+                        <form id="contactForm" action="https://formspree.io/f/mqagrryr" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group-custom">
+                                        <input type="text" name="name" class="form-control-custom" placeholder=" " required>
+                                        <label>Nama Lengkap</label>
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group-custom">
+                                        <input type="email" name="_replyto" class="form-control-custom" placeholder=" " required>
+                                        <label>Email</label>
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group-custom">
+                                        <input type="text" name="subject" class="form-control-custom" placeholder=" " required>
+                                        <label>Subjek</label>
+                                        <i class="fas fa-tag"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group-custom">
+                                        <textarea name="message" class="form-control-custom" rows="5" placeholder=" " required></textarea>
+                                        <label>Pesan</label>
+                                        <i class="fas fa-comment"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary-custom w-100">
+                                        <span>Kirim Pesan</span>
+                                        <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="form-note mt-3">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Saya akan membalas pesan Anda dalam 24 jam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <h3 class="footer-logo">Abdul Aziz</h3>
+                        <p>Fullstack Developer & UI/UX Enthusiast yang passionate dalam menciptakan solusi digital inovatif.</p>
+                        <div class="footer-social">
+                            <a href="https://github.com/doelsidenim" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/abdulaziz-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/abdul.aziz_18?igsh=MWZidXdsNTd1OWJlYQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Consultation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Surakarta, Indonesia</li>
+                            <li><i class="fas fa-envelope"></i> abdulaziz18123@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +62 895-3402-50433</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abdul Aziz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
